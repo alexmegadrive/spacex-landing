@@ -1,0 +1,332 @@
+body {
+  background-image: url(images/background-full-resizer-clear3.png) ;  
+  background-repeat: no-repeat;
+height: 100%;
+width: 100vw;
+
+  background-position: top;
+    min-height: 900px;
+    min-width: 1200px;
+    max-width: 1920px;
+
+
+
+  margin: 0px;
+  font-family: "Museosanscyrl300";
+  position: relative;
+}
+
+header {
+ 
+    height: 100px;
+    outline: 1px solid #272b2f;
+    outline-offset: -1px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.img__planet {
+    position: absolute;
+    transform: translate(-50%,-27%);
+    width: 391px;
+    height: 391px;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    visibility: visible !important;
+   
+
+}
+.logo__container{
+    display: inline-block;
+
+    height: 100% ;
+    width: fit-content;
+    margin-right: 20px;
+    padding-left:10px ;
+    padding-right:10px ;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 1px solid #272b2f;
+    outline-offset: -1px;
+    position: relative;
+
+    
+    background:
+    linear-gradient(to right, #ffffff 2px, transparent 2px) 0 0,
+    linear-gradient(to right, #ffffff 2px, transparent 2px) 0 100%,
+    linear-gradient(to left, #ffffff 2px, transparent 2px) 100% 0,
+    linear-gradient(to left, #ffffff 2px, transparent 2px) 100% 100%,
+    linear-gradient(to bottom, #ffffff 2px, transparent 2px) 0 0,
+    linear-gradient(to bottom, #ffffff 2px, transparent 2px) 100% 0,
+    linear-gradient(to top, #ffffff 2px, transparent 2px) 0 100%,
+    linear-gradient(to top, #ffffff 2px, transparent 2px) 100% 100%;
+    background-repeat: no-repeat;
+
+    background-size: 20px 20px;
+
+}
+
+
+
+.logo__image {
+    height: 37px;
+    width: 271px;
+
+}
+
+.nav__container {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    flex-direction: row;
+    align-items:center;
+    margin: 0;
+    padding: 0;
+    z-index: 1001;
+
+}
+
+.nav__container > li {
+    margin: 0 1rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+  }
+
+.nav__link {
+    display: flex;
+    font-family: "Museosanscyrl300"; 
+    font-size: 16px;
+    align-items:center;
+    color: #ffffff;
+    height: 25px;
+    text-decoration:none;
+    white-space: nowrap;
+    transition:0.5s;
+    border-bottom: 1px solid transparent;
+
+}
+
+.nav__link:hover {
+    opacity: 0.6;
+    border-bottom: 1px solid white;
+
+}
+
+.travel__image {
+    position: relative;
+    margin: 0 auto;
+    width: 586px;
+    height: 230px;
+    left: 374px;
+    top: 243px;
+}
+
+.traveltext__container {
+position: absolute;
+left: 10vw;
+top: 380px;
+}
+
+.traveltext__line1 {
+    text-transform: uppercase; 
+    font-family: 'Museosanscyrl700';
+    font-size: 58px;
+
+    background: -webkit-linear-gradient(45deg,#ffffff, #ff450c 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}
+.traveltext__line2 {
+    font-family: 'Museosanscyrl700';
+    font-size: 25px;
+    background: -webkit-linear-gradient(45deg,#ffffff, #ff450c 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+
+}
+
+.button_start {
+    position: absolute;
+
+
+    left: 10vw;
+    top: 564px;
+
+    width: 180px;
+    height: 37px;
+    padding: 0;
+    cursor: pointer;
+
+    font-family: Museosanscyrl300;
+    color:white;
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to left bottom,#29538b 10%,  transparent 50%, #577fb3 90%);
+    border-image-slice: 1;
+    transition:  0.5s;
+
+}
+
+.button_start:hover
+{
+    background: #095ea488;
+
+}
+
+.button_start:active {
+    box-shadow: 0 0 12px #1389E6 ;
+    background: #095fa4;
+}
+
+.numbers__container{
+    position: absolute;
+    display: inline-grid;
+    right: 10vw;
+    top: 360px;
+    width: fit-content;
+    height: fit-content;
+    grid-template-columns: repeat(2, auto);
+    box-sizing: border-box;
+    gap: 7px;
+    background-color: white 50%;
+    z-index: 1000 !important;
+
+
+
+}
+
+.numbers__element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width: 150px;
+    height: 150px;
+    color: #ffffff;
+    transition:  0.5s ;
+
+    
+}
+
+#element1 {   
+     background: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0% ,  transparent 50%, transparent 90%);
+     
+   
+}
+#element1:hover {   
+    background: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0% ,  transparent 50%, transparent 90%);
+  
+
+}
+#element2 {   
+    background: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0% ,  transparent 50%, transparent 90%);
+}
+#element2:hover {   
+    background: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.3) 0% ,  transparent 50%, transparent 90%);
+}
+#element3 {   
+    background: -webkit-linear-gradient(-135deg, rgba(255, 255, 255, 0.1) 0% ,  transparent 50%, transparent 90%);
+}
+#element3:hover {   
+    background: -webkit-linear-gradient(-135deg, rgba(255, 255, 255, 0.3) 0% ,  transparent 50%, transparent 90%);
+}
+#element4 {   
+    background: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 0% ,  transparent 50%, transparent 90%);
+}
+#element4:hover {   
+    background: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.3) 0% ,  transparent 50%, transparent 90%);
+}
+
+.numbers__outerline {
+    font-family: "Museosanscyrl300"; 
+    font-size: 16px;
+}
+
+.numbers__middleline {
+    font-family: "Museosanscyrl700"; 
+    font-size: 60px;
+}
+
+.menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+  
+  .menu-button::before {
+    content: '';
+    margin-top: -8px;
+  }
+  
+  .menu-button::after {
+    content: '';
+    margin-top: 8px;
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(45deg);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-45deg);
+  }
+  
+
+@font-face {
+    font-family: "Museosanscyrl700"; 
+    src: url("../fonts/Museo Sans Cyrl 700.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
+
+@font-face {
+        font-family: "Museosanscyrl300"; 
+        src: url("../fonts/Museo Sans Cyrl 300.ttf") format("truetype"); 
+        font-style: normal; 
+        font-weight: normal; 
+        } 
+
+        @font-face {
+            font-family: "Museosanscyrl100"; 
+            src: url("../fonts/Museo Sans Cyrl 100.ttf") format("truetype"); 
+            font-style: normal; 
+            font-weight: normal; 
+            } 
