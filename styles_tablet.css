@@ -5,7 +5,7 @@
     body {
         min-width: 320px;
         max-width: 768px;
-        background-image: url(images/background-mobile5.png)  ;  
+        background-image: url(./images/space5.jpg)  ;  
         
         background-repeat: no-repeat;
         /* background-position: top; */
@@ -25,11 +25,11 @@
         height: 20px;
     }
     .img__planet {
-        display: none;
+        /* display: none; */
     }
 
     .traveltext__container {
-        top: 100px;
+        top: 210px;
     }
     .traveltext__line1 {
         font-size: 35px;
@@ -53,10 +53,12 @@
         width: 120px;
         height: 120px;
     }
-    .button_start {
-        left: 50%;
+    .btn_start {
+        /* position: absolute; */
+        margin-top: 50px;     
+           left: 50%;
         transform: translateX(-50%);
-        top: 70vh;
+        /* top: 70vh; */
         width: 247px;
         height: 5vh;
         z-index: 11000;
@@ -173,10 +175,11 @@
         height: 120px;
     }
 
-    .button_start {
+    .btn_start {
+        margin-top: 50px; 
         width: 160px;
-        left: 3vw;
-        top: 586px;
+        /* left: 3vw; */
+        /* top: 586px; */
 
     }
     

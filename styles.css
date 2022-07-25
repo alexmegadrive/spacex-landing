@@ -1,13 +1,14 @@
 body {
-  background-image: url(images/background-full-resizer-clear3.png) ;  
+  background-image: url(./images/space5.jpg) ;  
   background-repeat: no-repeat;
-height: 100%;
+height: 100vh;
 width: 100vw;
-
+background-size: cover;
   background-position: top;
     min-height: 900px;
     min-width: 1200px;
-    max-width: 1920px;
+    backdrop-filter: blur(1px) brightness(50%);
+
 
 
 
@@ -28,11 +29,21 @@ header {
     justify-content: space-between;
 }
 
+h1 {
+    margin: 0;
+}
+
 .img__planet {
     position: absolute;
-    transform: translate(-50%,-27%);
-    width: 391px;
-    height: 391px;
+    /* background-image: url(./images/planet-clip.png); */
+    background-image: url(./images/planet-clip2.png);
+    background-repeat: no-repeat;
+    filter: drop-shadow(20px 20px 50px rgb(231, 81, 0));
+
+    transform: translate(-50%,-26%);
+    background-size:cover;
+    width: 385px;
+    height: 385px;
     top: 50%;
     left: 50%;
     z-index: 100;
@@ -132,7 +143,7 @@ header {
 .traveltext__container {
 position: absolute;
 left: 10vw;
-top: 380px;
+top: 40%;
 }
 
 .traveltext__line1 {
@@ -157,35 +168,34 @@ top: 380px;
 
 }
 
-.button_start {
+.btn_start {
     position: absolute;
+    margin-top: 70px;
 
 
-    left: 10vw;
-    top: 564px;
-
-    width: 180px;
-    height: 37px;
+    width: 200px;
+    height: 50px;
     padding: 0;
     cursor: pointer;
 
     font-family: Museosanscyrl300;
+    font-size: 1em;
     color:white;
     background: transparent;
-    border: 2px solid transparent;
+    border: 3px solid transparent;
     border-image: linear-gradient(to left bottom,#29538b 10%,  transparent 50%, #577fb3 90%);
     border-image-slice: 1;
     transition:  0.5s;
 
 }
 
-.button_start:hover
+.btn_start:hover
 {
     background: #095ea488;
 
 }
 
-.button_start:active {
+.btn_start:active {
     box-shadow: 0 0 12px #1389E6 ;
     background: #095fa4;
 }
@@ -194,7 +204,7 @@ top: 380px;
     position: absolute;
     display: inline-grid;
     right: 10vw;
-    top: 360px;
+    top: 40%;
     width: fit-content;
     height: fit-content;
     grid-template-columns: repeat(2, auto);
@@ -208,6 +218,7 @@ top: 380px;
 }
 
 .numbers__element {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -220,34 +231,36 @@ top: 380px;
     
 }
 
-#element1 {   
-     background: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0% ,  transparent 50%, transparent 90%);
-     
-   
+
+
+.numbers__background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease-in;
+    opacity: 0.1;
 }
-#element1:hover {   
-    background: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0% ,  transparent 50%, transparent 90%);
-  
+.numbers__background:hover {
+    opacity: 0.3;
 
 }
+
+#element1 {   
+    background: -webkit-linear-gradient(135deg, rgba(255, 255, 255) 0% ,  transparent 50%, transparent 90%);
+}
+
 #element2 {   
-    background: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0% ,  transparent 50%, transparent 90%);
+    background: -webkit-linear-gradient(45deg, rgba(255, 255, 255) 0% ,  transparent 50%, transparent 90%);
 }
-#element2:hover {   
-    background: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.3) 0% ,  transparent 50%, transparent 90%);
-}
+
 #element3 {   
-    background: -webkit-linear-gradient(-135deg, rgba(255, 255, 255, 0.1) 0% ,  transparent 50%, transparent 90%);
+    background: -webkit-linear-gradient(-135deg, rgba(255, 255, 255) 0% ,  transparent 50%, transparent 90%);
 }
-#element3:hover {   
-    background: -webkit-linear-gradient(-135deg, rgba(255, 255, 255, 0.3) 0% ,  transparent 50%, transparent 90%);
-}
+
 #element4 {   
-    background: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 0% ,  transparent 50%, transparent 90%);
+    background: -webkit-linear-gradient(-45deg, rgba(255, 255, 255) 0% ,  transparent 50%, transparent 90%);
 }
-#element4:hover {   
-    background: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.3) 0% ,  transparent 50%, transparent 90%);
-}
+
 
 .numbers__outerline {
     font-family: "Museosanscyrl300"; 
@@ -312,21 +325,21 @@ top: 380px;
 
 @font-face {
     font-family: "Museosanscyrl700"; 
-    src: url("../fonts/Museo Sans Cyrl 700.ttf") format("truetype"); 
+    src: url("./fonts/Museo Sans Cyrl 700.ttf") format("truetype"); 
     font-style: normal; 
     font-weight: normal; 
     } 
 
 @font-face {
         font-family: "Museosanscyrl300"; 
-        src: url("../fonts/Museo Sans Cyrl 300.ttf") format("truetype"); 
+        src: url("./fonts/Museo Sans Cyrl 300.ttf") format("truetype"); 
         font-style: normal; 
         font-weight: normal; 
         } 
 
         @font-face {
             font-family: "Museosanscyrl100"; 
-            src: url("../fonts/Museo Sans Cyrl 100.ttf") format("truetype"); 
+            src: url("./fonts/Museo Sans Cyrl 100.ttf") format("truetype"); 
             font-style: normal; 
             font-weight: normal; 
             } 
