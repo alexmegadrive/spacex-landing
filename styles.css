@@ -263,13 +263,15 @@ top: 40%;
     background: -webkit-linear-gradient(-45deg, rgba(255, 255, 255) 0% ,  transparent 50%, transparent 90%);
 }
 
-
-.numbers__outerline {
+.numbers__element > span {
     font-family: "Museosanscyrl300"; 
     font-size: 16px;
 }
 
-.numbers__middleline {
+
+
+
+.numbers__element > span:nth-child(2n) {
     font-family: "Museosanscyrl700"; 
     font-size: 60px;
 }
