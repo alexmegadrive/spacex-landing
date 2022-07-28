@@ -3,4 +3,4 @@
 
 Демонстрация адаптивной верстки для мобильных экранов, планшетов и ПК
 
-Запустить в браузере: http://i91960j3.beget.tech/spacex2/
+https://alexmegadrive.github.io/spacex_landing2
