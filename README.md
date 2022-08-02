@@ -1,6 +1,9 @@
 # spacex-landing
 Тестовый лендинг компании "SpaceX"
 
-Демонстрация адаптивной верстки для мобильных экранов, планшетов и ПК
+Адаптивная верстка
+Мобильная версия
+JS-скрипт для отрисовки указателя к кнопке 
 
-https://alexmegadrive.github.io/spacex_landing2
+Открыть в браузере:
+https://alexmegadrive.github.io/spacex-landing3/
