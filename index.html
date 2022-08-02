@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles_tablet.css">
+    <!-- <link rel="stylesheet" href="styles_tablet.css"> -->
     <link rel="font-family" href="museosanscyrl/ofont.ru_Museo Sans Cyrl 700.ttf">
     <title>SpaceX Landing</title>
 </head>
@@ -14,33 +14,57 @@
 <body>
 
     <header>
-        <div class="logo__container">
-            <div class="logo__image"> </div>
+        <div class="header__container">
+            <div class="logo__container">
+
+                <div class="logo_corner"></div>    
+                <div class="logo_corner"></div>    
+                <div class="logo_corner"></div>    
+                <div class="logo_corner"></div>    
+                <div class="logo__image">
+                </div>
+            </div>
+    
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+    
+            <ul class="nav__container">
+                <li><a href="#" class="nav__link">Главная</a></li>
+                <li> <a href="#" class="nav__link">Технологии</a></li>
+                <li><a href="#" class="nav__link">График полетов</a></li>
+                <li><a href="#" class="nav__link">Гарантии</a></li>
+                <li><a href="#" class="nav__link">О компании</a></li>
+                <li><a href="#" class="nav__link">Контакты</a></li>
+            </ul>
         </div>
+       
 
-        <input id="menu-toggle" type="checkbox" />
-        <label class='menu-button-container' for="menu-toggle">
-            <div class='menu-button'></div>
-        </label>
-
-        <ul class="nav__container">
-            <li><a href="#" class="nav__link">Главная</a></li>
-            <li> <a href="#" class="nav__link">Технологии</a></li>
-            <li><a href="#" class="nav__link">График полетов</a></li>
-            <li><a href="#" class="nav__link">Гарантии</a></li>
-            <li><a href="#" class="nav__link">О компании</a></li>
-            <li><a href="#" class="nav__link">Контакты</a></li>
-        </ul>
     </header>
 
-    <div class="traveltext__container">
+<div class="main-container">
+    <div class="title__wrapper">
+         <div class="title__container">
         <h1>
-            <div>Путешествие</div>
-            <div>на красную планету</div>
+            <div>
+                <span>Путешествие</span>
+                <span>на красную планету</span>
+            </div>
+         
         </h1>
-        <button class="btn_start">Начать путешествие</button>
-    </div>
+        <button class="btn_start">
+            <div class="btn_corner"></div>
+            <div class="btn_corner"></div>
+            Начать путешествие</button>
+</div></div>
+   
 
+
+    <div class="planet__container">
+        <div class="img__planet"></div>       
+    </div>
+<div class="numbers__wrapper">
     <div class="numbers__container">
         <div class="numbers__element">
             <span>мы</span>
@@ -60,7 +84,7 @@
 
         <div class="numbers__element">
             <span>календарик за</span>
-            <span>2001</span>
+            <span>2001<span>г.</span></span>
             <span>в подарок</span>
             <div class="numbers__background" id="element3"></div>
 
@@ -70,12 +94,19 @@
             <span>597</span>
             <span>дней</span>
             <div class="numbers__background" id="element4"></div>
-
         </div>
     </div>
-    <div class="img__planet"></div>
+</div>
+   
 
 
+</div>
+
+
+
+
+
+<script src="./main.js" defer></script>
 </body>
 
 </html>
