@@ -335,13 +335,25 @@
   margin-top: 0px;
   transform: rotate(-45deg);
 }
+
+#menu-toggle ~ .nav__container li {
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+#menu-toggle:checked ~ .nav__container li {
+  height: 2.5em;
+  padding: 0.5em;
+  border: 1px solid #333;
+  transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
 /* 2.4 BURGER MENU (END) */
 /* 2.5 БЛОК LOGO (START) */
 
 .logo__container {
-  display: inline-block;
-  display: flex;
-  position: relative;
   position: relative;
   align-items: center;
   justify-content: center;
@@ -387,7 +399,6 @@
   transform: rotate(180deg);
 }
 /* 2.5 БЛОК LOGO (END) */
-
 /* 2. ТИПОВЫЕ ЭЛЕМЕНТЫ (END) */
 
 /* 3. HEADER (START) */
@@ -443,6 +454,7 @@
   opacity: 0.6;
 }
 /* 3. HEADER (END) */
+
 /* 4. MEDIA ЗАПРОСЫ (START) */
 
 @media (max-width: 1200px) {
@@ -549,21 +561,6 @@
     margin-top: 10px;
   }
 
-  #menu-toggle ~ .nav__container li {
-    height: 0;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-
-  #menu-toggle:checked ~ .nav__container li {
-    height: 2.5em;
-    padding: 0.5em;
-    border: 1px solid #333;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-
   .nav__container > li {
     display: flex;
     justify-content: center;
@@ -579,5 +576,4 @@
     border-bottom: 1px solid #444;
   }
 }
-
 /* 4. MEDIA ЗАПРОСЫ (END) */
