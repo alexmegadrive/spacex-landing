@@ -1,112 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="./images/favicons/favicon.ico"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./images/favicons/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./images/favicons/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="180x180"
+      href="./images/favicons/apple-touch-icon.png"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <!-- <link rel="stylesheet" href="styles_tablet.css"> -->
-    <link rel="font-family" href="museosanscyrl/ofont.ru_Museo Sans Cyrl 700.ttf">
     <title>SpaceX Landing</title>
-</head>
+  </head>
 
-<body>
-
-    <header>
-        <div class="header__container">
-            <div class="logo__container">
-
-                <div class="logo_corner"></div>    
-                <div class="logo_corner"></div>    
-                <div class="logo_corner"></div>    
-                <div class="logo_corner"></div>    
-                <div class="logo__image">
-                </div>
-            </div>
-    
-            <input id="menu-toggle" type="checkbox" />
-            <label class='menu-button-container' for="menu-toggle">
-                <div class='menu-button'></div>
-            </label>
-    
-            <ul class="nav__container">
-                <li><a href="#" class="nav__link">Главная</a></li>
-                <li> <a href="#" class="nav__link">Технологии</a></li>
-                <li><a href="#" class="nav__link">График полетов</a></li>
-                <li><a href="#" class="nav__link">Гарантии</a></li>
-                <li><a href="#" class="nav__link">О компании</a></li>
-                <li><a href="#" class="nav__link">Контакты</a></li>
-            </ul>
+  <body class="body">
+    <!--—BEGIN HEADER -->
+    <header class="header">
+      <div class="header__container">
+        <div class="logo__container">
+          <div class="logo_corner"></div>
+          <div class="logo_corner"></div>
+          <div class="logo_corner"></div>
+          <div class="logo_corner"></div>
         </div>
-       
-
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+          <div class="menu-button"></div>
+        </label>
+        <ul class="nav__container">
+          <li><a href="#" class="nav__link">Главная</a></li>
+          <li><a href="#" class="nav__link">Технологии</a></li>
+          <li><a href="#" class="nav__link">График полетов</a></li>
+          <li><a href="#" class="nav__link">Гарантии</a></li>
+          <li><a href="#" class="nav__link">О компании</a></li>
+          <li><a href="#" class="nav__link">Контакты</a></li>
+        </ul>
+      </div>
     </header>
+    <!--—END HEADER -->
 
-<div class="main-container">
-    <div class="title__wrapper">
-         <div class="title__container">
-        <h1>
-            <div>
-                <span>Путешествие</span>
-                <span>на красную планету</span>
-            </div>
-         
+    <!--—BEGIN MAIN -->
+    <main class="main-container">
+      <div class="offer__wrapper">
+        <h1 class="offer__title">
+          <span>Путешествие</span>
+          <span>на красную планету</span>
         </h1>
         <button class="btn_start">
-            <div class="btn_corner"></div>
-            <div class="btn_corner"></div>
-            Начать путешествие</button>
-</div></div>
-   
-
-
-    <div class="planet__container">
-        <div class="img__planet"></div>       
-    </div>
-<div class="numbers__wrapper">
-    <div class="numbers__container">
-        <div class="numbers__element">
-            <span>мы</span>
-            <span>1</span>
-            <span>на рынке</span>
+          <div class="btn_corner"></div>
+          <div class="btn_corner"></div>
+          Начать путешествие
+        </button>
+      </div>
+      <div class="planet__container">
+        <div class="planet__pointer"></div>
+        <div class="img__planet"></div>
+      </div>
+      <div class="numbers__wrapper">
+        <div class="numbers__container">
+          <div class="numbers__element">
+            <span class="numbers__text">мы</span>
+            <span class="numbers__digit">1</span>
+            <span class="numbers__text">на рынке</span>
             <span class="numbers__background" id="element1"></span>
-
-        </div>
-        <div class="numbers__element">
-            <span>гарантируем</span>
-            <span>50%</span>
-            <span>безопасность </span>
+          </div>
+          <div class="numbers__element">
+            <span class="numbers__text">гарантируем</span>
+            <span class="numbers__digit">50%</span>
+            <span class="numbers__text">безопасность </span>
             <div class="numbers__background" id="element2"></div>
-
-        </div>
-
-
-        <div class="numbers__element">
-            <span>календарик за</span>
-            <span>2001<span>г.</span></span>
-            <span>в подарок</span>
+          </div>
+          <div class="numbers__element">
+            <span class="numbers__text">календарик за</span>
+            <span class="numbers__digit"
+              >2001<span class="numbers__text">г.</span></span
+            >
+            <span class="numbers__text">в подарок</span>
             <div class="numbers__background" id="element3"></div>
-
-        </div>
-        <div class="numbers__element">
-            <span>путешествие</span>
-            <span>597</span>
-            <span>дней</span>
+          </div>
+          <div class="numbers__element">
+            <span class="numbers__text">путешествие</span>
+            <span class="numbers__digit">597</span>
+            <span class="numbers__text">дней</span>
             <div class="numbers__background" id="element4"></div>
+          </div>
         </div>
-    </div>
-</div>
-   
-
-
-</div>
-
-
-
-
-
-<script src="./main.js" defer></script>
-</body>
-
+      </div>
+    </main>
+    <!--—END MAIN -->
+  </body>
 </html>
