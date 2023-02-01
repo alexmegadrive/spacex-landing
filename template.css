@@ -434,6 +434,9 @@
 /* 4. MEDIA ЗАПРОСЫ (START) */
 
 @media (max-width: 1350px) {
+  .main {
+    margin-top: 50px;
+  }
   .body {
     background-repeat: no-repeat;
   }
@@ -446,7 +449,7 @@
 
   .header__container {
     gap: 30px;
-    width: auto;
+    padding: 0 70px;
   }
 
   .main-container {
