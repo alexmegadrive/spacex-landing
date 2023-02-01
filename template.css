@@ -38,7 +38,6 @@
 
 .main {
   display: flex;
-  align-items: center;
   top: 0;
   right: 0;
   justify-content: center;
@@ -444,7 +443,6 @@
   .header {
     height: 50px;
     justify-content: space-around;
-    /* padding: 0 70px; */
   }
 
   .header__container {
