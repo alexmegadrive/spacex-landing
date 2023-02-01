@@ -36,16 +36,19 @@
   background-size: cover;
 }
 
+.main {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
 .main-container {
   display: flex;
-  position: absolute;
-  top: 26vh;
-  left: 50%;
   align-items: flex-start;
   justify-content: space-between;
   width: 160vh;
   margin: 0 auto;
-  transform: translateX(-50%);
+  transform: translateY(-11vh);
 }
 
 /* 2.1 БЛОК OFFER (START) */
