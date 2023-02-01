@@ -77,7 +77,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   font-family: "Museosanscyrl700";
-  font-size: 7.5vh;
+  font-size: 7.3vh;
   text-transform: uppercase;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 15%, 93% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 15%, 93% 100%, 0 100%);
