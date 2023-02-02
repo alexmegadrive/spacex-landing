@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -27,11 +28,11 @@
       sizes="180x180"
       href="./images/favicons/apple-touch-icon.png"
     />
-
+    <script src="./scripts/template.js" defer></script>
     <title>SpaceX Landing</title>
   </head>
 
-  <body class="body">
+  <body class="body" id="body">
     <!--—BEGIN HEADER -->
     <header class="header">
       <div class="header__container">
@@ -51,7 +52,9 @@
           <li><a href="#" class="nav__link">График полетов</a></li>
           <li><a href="#" class="nav__link">Гарантии</a></li>
           <li><a href="#" class="nav__link">О компании</a></li>
-          <li><a href="#" class="nav__link">Контакты</a></li>
+          <li>
+            <a href="#" class="nav__link" id="modalBtn">Контакты</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -108,5 +111,57 @@
       </div>
     </main>
     <!--—END MAIN -->
+    <!--START MODAL -->
+    <div class="modal">
+      <form class="form" action="./scripts/send.php" method="post">
+        <ul class="modal__inputs-list">
+          <li class="personal-detail__item">
+            <input
+              class="personal-detail__input"
+              type="text"
+              placeholder="Имя"
+              name="name"
+              id="name"
+              pattern="^([A-Za-zА-Яа-яЁё]{3,})$"
+              title="Format: минимум 3 буквы"
+              data-inputField="name"
+              required
+            />
+          </li>
+
+          <li class="personal-detail__item">
+            <input
+              class="personal-detail__input"
+              type="text"
+              name="contact"
+              id="contact"
+              pattern="([a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$)|(\+[0-9]{9,15}$)"
+              placeholder="Phone number or email"
+              title="Формат: +15551110000, мин. длина = 9, или email@domain.ru"
+              data-inputField="telEmail"
+              required
+            />
+          </li>
+
+          <li class="personal-detail__item">
+            <input
+              class="personal-detail__input"
+              type="text"
+              placeholder="Сообщение"
+              pattern=".*\S.*"
+              name="message"
+              id="message"
+              title="минимум 1 буква или цифра"
+              title="Ваше сообщение"
+              data-inputField="message"
+              required
+            />
+          </li>
+        </ul>
+
+        <input class="form__submit-btn" type="submit" value="CONFIRM" />
+      </form>
+    </div>
+    <!--—END MODAL -->
   </body>
 </html>
